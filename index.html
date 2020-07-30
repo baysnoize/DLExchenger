@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Обменника</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="">
+
+	<script src="js/main.js"></script>
+	<script src="js/list.js"></script>
+	<script>
+		
+	</script>
+</head>
+<body onload="changeValue()">
+	<header id="header" class="header">
+		<div class="navigation">
+			<a href="#" class="logo">
+					DLExchenger
+			</a>
+				<p class="cheak">
+					Cheak ID
+				</p>
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="offer">
+			<div class="container" style="flex-direction: column">
+				<h1>
+						Обменник
+				</h1>
+				<div class="chenger">
+					<span>Отдаёте</span>
+					<select v-model="selected" class="currency" id="give" onclick="reserve()"> <!-- функция вывода резерва -->
+						<!-- инлайновый объект с данными -->
+						<option value='0'>BTC</option>";
+			            <option value='1'>ETH</option>";
+			            <option value='2'>EUR</option>";
+			            <option value='3'>UAH</option>";
+					</select>
+					<form action="#" class="form">
+						<input type="number" placeholder="0,01" step="0.01" min="0" id="sum_give" onkeyup="getValue()">
+					</form>						
+						<span>Получаете</span>
+						<select v-model="selected" class="currency" id="take" onchange="getValue()" >
+						</select>
+					<form action="#" class="form">
+						<input type="number" placeholder="0,01" step="0.01" min="0" id="sum_take" onkeyup="getValueBack()">
+					</form>
+				</div>
+					<input class="send" type="submit" value="Укажите сумму">
+				</div>
+		</div>
+		<div class="container">
+			<div class="coments" onload="">
+				<p>Курс <span id="course"></span></p>
+				<p>Резерв<span id="reserve">4 BTC</span></p>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</header>
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="details">
+				<p>
+					Права защищены всеми защитными и моющими средствами этого мира
+				</p>
+				<p>
+					Этого мира
+				</p>
+				<p>
+					И этого мира
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
