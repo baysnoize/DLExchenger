@@ -78,11 +78,11 @@ function reserve()
 {
         let give = document.getElementById("give");
         let take = document.getElementById("take");
-     if (give.value == 0) {
+     if (take.value == "ETH_BTC" || take.value == "EUR_BTC" || take.value == "UAH_BTC" ) {
       document.getElementById("reserve").textContent="4 BTC";
-    } else if (give.value == 1) {
+    } else if (take.value == "BTC_ETH" || take.value == "EUR_ETH" || take.value == "UAH_ETH") {
       document.getElementById("reserve").textContent="18 ETH";
-    } else if (give.value == 2) {
+    } else if (take.value == "BTC_EUR" || take.value == "ETH_EUR" || take.value == "UAH_EUR") {
       document.getElementById("reserve").textContent="В данный момент нету :(";
     } else {
       document.getElementById("reserve").textContent="30 000 UAH";
